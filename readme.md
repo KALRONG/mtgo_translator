@@ -1,4 +1,4 @@
-#mtgo-translator
+# mtgo-translator
 # Introduction
 This is a first "really ugly" version of an script that will use the translations on scryfall to translate the cards in mtgo to the language that we want.
 
