@@ -21,8 +21,16 @@ You also need to copy, to the same folder set on the path variable, the CardData
 # How it "works"
 MTGO cards information is stored in several XML files that are correlated using unique ID's for each part of the card, the ID used to identify the card is the same as the mtgo_id but with the prefix DOC, this helps us find the specific card in the json file from scryfall that we then use to find the specific data in the selected language and generate the new XMLs with the text translated.
 
+# why scryfall and not mtgjson?
+mtgjson provides an sqlite database but it doesnt have the neede end of file on the texts so the game goes a little bit crazy, scryfall in the other hand, provides the proper ends of line.
+
 # Run time
 As I said this script is ugly and probably not the best way to do this, but it works, it just takes several hours and around 5gb of ram in the mean time.
+
+# TODO
+- Maybe generate an sqlite from the json to makes things easier and faster.
+- Multithreading?
+- Multi face cards and PW.
 
 # Disclaimer
 This script has nothing to do with WoTC and is provided as is with little test, so always use a backup, and use it as your own risk.
