@@ -27,6 +27,10 @@ mtgjson provides an sqlite database but it doesnt have the neede end of file on 
 # Run time
 As I said this script is ugly and probably not the best way to do this, but it works, it just takes several hours and around 5gb of ram in the mean time.
 
+# Known issues
+
+- The export/import will use the new card names so it may cause issues when trying to move decks around different languages.
+
 # TODO
 - Maybe generate an sqlite from the json to makes things easier and faster.
 - Multithreading?
